@@ -1,0 +1,27 @@
+@import "tailwindcss";
+/* CSS Reset */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(248, 248, 248, 1);
+    color: rgba(42, 45, 45, 1);
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+/* CSS Variables */
+:root {
+  --neutral-200: rgba(223, 227, 227, 1);
+  --neutral-300: rgba(191, 198, 198, 1);
+  --neutral-500: rgba(124, 129, 129, 1);
+  --neutral-600: rgba(97, 100, 100, 1);
+  --neutral-700: rgba(65, 67, 67, 1);
+  --neutral-800: rgba(42, 45, 45, 1);
+  --background-color: rgba(255, 255, 255, 1);
+}
