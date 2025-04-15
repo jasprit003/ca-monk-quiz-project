@@ -6,3 +6,7 @@ export { default as Progress } from "./Progress";
 export { default as Modal } from "./Modal";
 export { default as Quit } from "./Quit";
 export { default as Container } from "./Container";
+export { default as Overview } from "./Overview";
+export { default as QuestionStatement } from "./QuestionStatement";
+export { default as Score } from "./Score";
+export { default as ScoreOverview } from "./ScoreOverview";

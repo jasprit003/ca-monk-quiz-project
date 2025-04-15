@@ -26,6 +26,9 @@ const App = () => {
   const handleReset = () => {
     setIsFinished(false);
     setIsStarted(false);
+    setScore(0);
+    setCurrentIndex(0);
+    setUserAnswers([]);
   };
 
   return (

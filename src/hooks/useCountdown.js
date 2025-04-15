@@ -4,7 +4,6 @@ export const useCountdown = (start = 30, triggerKey = null) => {
   const [timeLeft, setTimeLeft] = useState(start);
   const intervalRef = useRef(null);
 
-  // Reset timer when triggerKey changes (like questionId)
   useEffect(() => {
     setTimeLeft(start);
     if (intervalRef.current) clearInterval(intervalRef.current);

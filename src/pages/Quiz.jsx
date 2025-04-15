@@ -24,9 +24,13 @@ const Quiz = ({
 
   const timeLeft = useCountdown(30, currentIndex);
 
+  const totalQuestion = questions?.length - 1;
+
   const currentQuestion = questions?.[currentIndex];
 
   const timer = `0:${timeLeft < 10 ? "0" + timeLeft : timeLeft}`;
+
+  console.log(userAnswers);
 
   React.useEffect(() => {
     if (timeLeft === 0) {
@@ -54,7 +58,7 @@ const Quiz = ({
     setSelectedAnswers(Array(4).fill(""));
 
     setCurrentIndex((prev) => {
-      if (prev < 9) {
+      if (prev < totalQuestion) {
         return prev + 1;
       } else {
         const finalScore = userAnswers.filter(
